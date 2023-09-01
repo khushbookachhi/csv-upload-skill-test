@@ -7,17 +7,6 @@ const ejslayouts=require('express-ejs-layouts');
 const db=require('./config/mongoose')
 app.use(express.urlencoded());
 
-// node-sass-middleware configuration
-// app.use(
-//     sassMiddlWare({
-//         src: "./assets/scss",
-//         dest: "./assets/css",
-//         debug: true,
-//         outputStyle: "extended",
-//         prefix: "/css",
-//     })
-// );
-  
 app.use(express.static('./assets'));
 // setting a layout
 app.use(ejslayouts);
